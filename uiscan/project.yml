@@ -1,0 +1,14 @@
+name: UIScan
+options:
+  bundleIdPrefix: com.zorrobyte.uiscan
+targets:
+  UIScanTests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: CaptureUITests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.zorrobyte.uiscan.tests
